@@ -1,0 +1,45 @@
+STEPS
+======
+1. ENSURE THAT PORT IS CONFIGURED AS BELOW 
+const PORT = process.env.PORT || 5000;
+2. PACKAGE.JSON TO HAVE "start": "node index"
+"scripts": {
+    "start": "node index", 
+    "dev": "nodemon index"
+  },
+3.SIGNUP AND LOGIN TO HEROKU
+4.DOWNLOAD AND INSTALL HEROKU CLIENT, TEST
+heroku -v
+heroku/7.21.0 win32-x64 node-v11.9.0
+5.LOGIN TO HEROKU FROM TERMINAL
+heroku login (you will be redirected to the site, login)
+6.INSTALL GIT, AND CHECK
+git --version
+git version 2.20.1.windows.1
+7.MODIFY .gitignore 
+add folders and files that need not be added to git.
+node_modules
+steps-generic.txt
+steps-heroku-deployment.txt
+8. INITIALIZE GIT, ADD, COMMIT.
+git init (inside root folder)
+git add . (add all files)
+git commit -m "IC" (initial commit)
+9.CREATE A NEW APP IN HEROKU
+heroku create
+Creating app... done, ⬢ safe-plateau-61323
+https://safe-plateau-61323.herokuapp.com/ | https://git.heroku.com/safe-plateau-61323.git
+
+10.ADD PROJECT TO THE REPO
+Initialize a git repository in a new or existing directory
+Open https://safe-plateau-61323.herokuapp.com/ > DEPLOY tab > Create a new Git repository
+Initialize a git repository in a new or existing directory
+find this : $ heroku git:remote -a safe-plateau-61323
+TERMINAL COMMAND
+heroku git:remote -a safe-plateau-61323
+RESULT : set git remote heroku to https://git.heroku.com/safe-plateau-61323.git
+TERMINAL COMMAND
+git push heroku master
+TERMINAL COMMAND (test)
+heroku open
+Access the url : https://safe-plateau-61323.herokuapp.com/

@@ -1,0 +1,34 @@
+VSCODE SHORTCUTS
+ctrl `   : to switch from file editor to terminal.
+ctrl k+s : display shortcuts
+
+CHECK NODE AND NPM
+node --version
+npm --version
+
+INITIALIZE PACKAGE.JSON
+npm init
+
+INFO : UUID
+A universally unique identifier (UUID) is a 128-bit number used to identify information in computer systems.
+The term globally unique identifier (GUID) is also used. 
+
+
+ERROR
+Error: Cannot find module 'uuid'
+
+INSTALL UUID MODULE   
+npm install uuid --save
+
+INSTALL NODEMON, SAVE IT TO DEV DEPENDENCIES. NODEMON DYNAMICALLY LOADS CHANGES FROM THE PROJECT
+npm install --save-dev nodemon   (you can use -D instead of --save-dev)
+
+DEBUGGING
+Bug: WHEN TRYING TO RUN npm index.js
+Attribute 'program' does not exist.
+in launch.json
+replace
+ "program": "${workspaceFolder}/asynchronous\\cd-node-app\\app\\index.js"
+ with 
+"program": "${workspaceFolder}\\cd-node-app\\app\\index.js" 
+
