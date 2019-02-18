@@ -1,2 +1,2 @@
 # jfs-js-git
-The JavaScript Ecosystem!!
+The JavaScript Ecosystem is great.
