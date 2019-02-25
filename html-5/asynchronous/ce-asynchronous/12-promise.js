@@ -18,7 +18,7 @@ const products = [
 function createProduct(product) {
   console.log('createProduct');
   return new Promise((resolve, reject) => {
-    setTimeout(() => {
+    //setTimeout(() => {
       //2 seconds to create product.
       products.push(product);
       const error = false;
@@ -30,20 +30,20 @@ function createProduct(product) {
         console.log('error occured!');
         reject('Error Occured and promise is rejected!');
       }
-    }, 2000);
+   // }, 2000);
   });
 }
 function getProducts() {
   console.log('getProducts');
 
   //1 second to fetch product
-  setTimeout(() => {
+  //setTimeout(() => {
     let template = '';
     products.forEach(product => {
       template += `<li>${product.productName}</li>`;
     });
     document.body.innerHTML = template;
-  }, 1000);
+  //}, 1000);
 }
 
 createProduct({
