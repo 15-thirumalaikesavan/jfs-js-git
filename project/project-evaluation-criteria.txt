@@ -1,0 +1,9 @@
+1 meet the specs
+2 coding standards
+3 design patterns
+4 reusability & modularity
+5 degree of bug free execution
+6 readability and simplicity
+7 fullness of fullstack
+8 query handling
+9+10 innovation and creativity
